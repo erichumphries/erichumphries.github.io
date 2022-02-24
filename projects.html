@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <link rel="icon" href="assets/favicon.png">
+        <title>Eric Humphries</title>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="styles/bootstrap.min.css">
+        <link rel="stylesheet" href="styles/bootstrap-icons.css">
+        <!-- Animation CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <!-- Base CSS -->
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body>
+
+        <!--Navbar-->
+        <nav class="navbar navbar-light container-fluid navbar-bg-color">
+            <ul class="navbar-right nav">
+                <li class="active">
+                    <a class="navbar-brand" href="index.html">
+                        <i class="bi bi-house"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link color-dark-purple" href="projects.html">
+                        Projects
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link color-dark-purple" href="blog.html">
+                        Blog
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link color-dark-purple" href="about.html">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link color-dark-purple" href="contact.html">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+            <div class="navbar-header">
+                <a class="navbar-brand" href="about.html">Eric Humphries</a>
+            </div>
+        </nav>
+
+        <!-- 'Projects Heading -->
+        <div class="container">
+            <h1 class="display-5 mt-3">
+                <i class="bi bi-bug"></i> Projects
+            </h1>
+            <hr>
+        </div>
+
+        <div class="animate__animated animate__backinUp color-linen container h-50 text-center box-margins">
+            <div class="card-deck gap-4 row row-cols-md-3 justify-content-center">
+                <div class="card-bg-color card">
+                    <div class="card-header">
+                        <img class="card-img-top" src="assets/html-game.png">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title"> HTML Adventure Game </h3>
+                        <p class="card-text text-wrap"> A game I made when learning HTML and CSS where you investigate a haunted manor. </p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn mt-1 btn-color" onclick="window.location.href='https://github.com/erichumphries/HTML-Adventure-Game---Mystic-Manor/blob/main/README.md'"> Read More </a>
+                        <a class="btn mt-1 btn-color" onclick="window.location.href='https://github.com/erichumphries/HTML-Adventure-Game---Mystic-Manor/tree/main'"> Github </a>
+                        <a class="btn mt-1 btn-color" onclick="document.location='projects/html-game/start.html'"> Play Game </a>
+                    </div>
+                </div>
+                
+                <div class="card card-bg-color">
+                    <div class="card-header">
+                        <img class="card-img-top" src="assets/chess.jpg">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title"> Chess Bot </h3>
+                        <p class="card-text text-wrap"> WIP: I'm making a chess bot using java. It will be finished in the coming weeks! </p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-color" onclick="document.location='articles/chess-bot.html'"> Read More </a>
+                    </div>
+                </div>
+
+                <div class="card-bg-color card">
+                    <div class="card-header">
+                        <img class="card-img-top" src="assets/website.png">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title"> Website Porfolio </h3>
+                        <p class="card-text text-wrap"> This website you're on is one of my favorite projects! </p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-color" onclick="window.location.href='https://github.com/erichumphries/erichumphries.github.io'"> Github </a>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+
+        <!-- Bootstrap Bundle with Popper -->
+        <script src="scripts/bootstrap.bundle.min.js"></script>
+    </body>
+
+
+</html>

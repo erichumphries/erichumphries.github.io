@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <link rel="icon" href="assets/favicon.png">
+        <title>Eric Humphries</title>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="styles/bootstrap.min.css">
+        <link rel="stylesheet" href="styles/bootstrap-icons.css">
+        <!-- Animation CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <!-- Base CSS -->
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-light container-fluid navbar-bg-color">
+            <ul class="navbar-right nav">
+                <li class="active">
+                    <a class="navbar-brand" href="index.html">
+                        <i class="bi bi-house"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link color-dark-purple" href="projects.html">
+                        Projects
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link color-dark-purple" href="blog.html">
+                        Blog
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link color-dark-purple" href="about.html">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link color-dark-purple" href="contact.html">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+            <div class="navbar-header">
+                <a class="navbar-brand" href="about.html">Eric Humphries</a>
+            </div>
+        </nav>
+
+        <!-- 'About' Heading -->
+        <div class="container">
+            <h1 class="display-5 mt-4">
+                <i class="bi bi-person-square"></i> About
+            </h1>
+            <hr>
+        </div>
+
+        <!-- About Me: using Grid & Flex -->
+        <div class="animate__animated animate__backinUp container-fluid row">
+
+            <!-- Column 1: Social links & Education -->
+            <div class="text-center col-md-2">
+                <h4 class="lead"> Eric Humphries </h4>
+                <img class='img-thumbnail rounded-circle w-50' src="assets/me.jpg">
+                <div class="d-flex justify-content-center gap-4 m-4">
+                    <a href='#' class='text-white'> <i class="bi bi-linkedin"></i> </a>
+                    <a href='https://github.com/erichumphries' class='text-white'> <i class="bi bi-github"></i> </a>
+                </div>
+                <hr>
+                <div class="d-flex row row-cols-1">
+                    <span> Education: <span>
+                    <small> Computer Science, B.S., </small>
+                    <small> University of New Orleans </small>
+                </div>
+                <hr>
+            </div>
+
+            <!-- Column 2: Name & Skills -->
+            <div class='bg-blue-purple col-md-10 rounded'>
+
+                <!-- Row 1: Name & Image -->
+                <div class="row">
+                    <div class="col-md-8 col-12">
+                        <h1>Eric Humphries</h1>
+                        <p> Hello! I'm currently a Junior CS major at the University of New Orleans. Before I went here, I went to Purdue for a semester. 
+                            My current graduation month is May 2023. My concentration is undecided, but I have greatly enjoyed assembly language, artificial intelligence, and web applications.
+                            Below, you'll find a list of classes I have taken as well as skills I've learned. If you have any further questions, feel free to contact me in the contact section.
+                            <br> <br>
+                            List of relevant coursework: <br>
+                            Data Structures, Machine Structure and Assembly Language, Systems Programming, Computer Design and Organization, Analysis of Algorithms, 
+                            Data Models and Database Systems, Developing Advanced Web Applications, Introduction to Artificial Intelligence
+                        </p>
+                    </div>
+                    <div class="col-md-4 d-md-block d-none mt-3">
+                        <img class='img-fluid img-border rounded' src='assets/me.jpg' >
+                    </div>
+                </div>
+
+                <!-- Row 2: Skills -->
+                <hr>
+                <h2 class='display-6'>Skills:</h2>
+                <div class="d-flex row row-cols-5">
+                    <img class="mt-1" src='assets/icon-java.png'>
+                    <img class="mt-1" src='assets/icon-js.png'>
+                    <img class="mt-1" src='assets/icon-html5.png'>
+                    <img class="mt-1" src='assets/icon-css3.png'>
+                    <!--
+                    <img src='assets/icon-react.png'>
+                    <img src='assets/icon-mongodb.png'>
+                    <img src='assets/icon-node.webp'>
+                    <img src='assets/icon-npm.png'>
+                    <img src='assets/icon-passport.png'>
+                    <<img src='assets/icon-socketio.png'>
+                    -->
+                    <img class="mt-1" src="assets/icon-c.png">
+                    <img class="mt-1" src="assets/icon-git.png">
+                    <img class="mt-1" src="assets/icon-github.png">
+                    <img class="mt-1" src="assets/icon-gitbash.png">
+                    <img class="mt-1" src="assets/icon-vsc.png">
+                    <img class="mt-1" src="assets/icon-asm.png">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Bootstrap Bundle with Popper -->
+        <script src="scripts/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

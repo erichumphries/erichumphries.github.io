@@ -1,0 +1,104 @@
+.color-dark-purple {
+    color: #242038;
+}
+
+.color-violet {
+    color: #9067C6;
+}
+
+.color-blue-purple {
+    color: #8D86C9;
+}
+
+.color-lavender-gray {
+    color: #CAC4CE;
+}
+
+.color-linen {
+    color: #F7ECE1;
+}
+
+body {
+    background-color: #242038;
+    color: #F7ECE1;
+}
+
+a:hover {
+    color: #9067C6;
+}
+
+.navbar-bg-color {
+    background-color: #CAC4CE;
+}
+
+.bg-blue-purple {
+    background-color: #8D86C9;
+}
+
+.bg-violet {
+    background-color: #9067C6;
+}
+
+.box-margins {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.bg-image-container {
+    background-attachment: fixed;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.btn-color {
+    color:#F7ECE1;
+    border-color: #F7ECE1;
+    border-width: 2px;
+}
+
+.btn-color:hover {
+    color:#242038;
+    border-color: #242038;
+}
+
+.carousel-btn {
+    color:#F7ECE1;
+    border-color:#F7ECE1;
+    border-width: 2px;
+}
+
+.carousel-btn:hover {
+    background-color: #F7ECE1;
+    color: black;
+}
+
+.card-bg-color {
+    transition: transform .3s;
+    background-color: #8D86C9;
+}
+
+.card-bg-color:hover {
+    background-color: #9067C6;
+}
+
+.card-transition {
+    transition: transform .3s;
+}
+
+.card-transition:hover {
+    transform: scale(1.1);;
+}
+
+.img-border {
+    border: 3px solid #9067C6;
+}
+
+.go-back:hover {
+    color: #CAC4CE;
+}
+
+.hidden {
+    visibility: hidden;
+}

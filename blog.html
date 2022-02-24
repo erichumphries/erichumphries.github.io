@@ -1,0 +1,171 @@
+<html>
+    <head>
+        <link rel="icon" href="assets/favicon.png">
+        <title>Eric Humphries</title>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="styles/bootstrap.min.css">
+        <link rel="stylesheet" href="styles/bootstrap-icons.css">
+
+        <!-- Animation CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+
+        <!-- Base CSS -->
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body>
+
+        <!--Navbar-->
+        <nav class="navbar navbar-light container-fluid navbar-bg-color">
+            <ul class="navbar-right nav">
+                <li class="active">
+                    <a class="navbar-brand" href="index.html">
+                        <i class="bi bi-house"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link color-dark-purple" href="projects.html">
+                        Projects
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link color-dark-purple" href="blog.html">
+                        Blog
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link color-dark-purple" href="about.html">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link color-dark-purple" href="contact.html">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+            <div class="navbar-header">
+                <a class="navbar-brand" href="about.html">Eric Humphries</a>
+            </div>
+        </nav>
+
+        <!-- Main Page of blog -->
+        <div id="main-page" class="position-absolute w-100 animate__animated animate__fast">
+
+            <!--Blog page-->
+            <div class="container mt-4">
+                <h1 class="display-5">
+                    <i class="bi bi-journals"></i> Blog
+                </h1>
+                <hr>
+            </div>
+
+            <!--Carousel -->
+            <div id="blog-carousel" class="animate__animated animate__backinUp carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+                <!-- Carousel Menu -->
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#blog-carousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#blog-carousel" data-bs-slide-to="1"></li>
+                </ol>
+                <!-- Carousel Body -->
+                <div class="carousel-inner text-center">
+                    <!-- Slide 1 -->
+                    <div id="slide-1" class="carousel-item active mb-5">
+                        <img class="img-fluid w-75" src="assets/chess-blog.jpg">
+                        <div class="carousel-caption">
+                            <h5> Chess Bot </h5>
+                            <h6> 2/23/22 </h6>
+                            <p> My current thoughts and progress on my chess bot </p>
+                            <!--
+                            <button class="btn carousel-btn" onclick="document.location='articles/chess-bot.html'"> Read More </button>
+                            -->
+                            <a class="btn carousel-btn" onclick="articlePage('Chess Bot','2/23/22','For my Introduction to Artificial Intelligence class, we are tasked to create a chess bot. In the class, we learned of various different searching algorithm, but there was a clear winner. Alpha-Beta search is the key. In Alpha-Beta search, we take the advantages of adversarial search but add the elemt of igmoring paths we know are unfavorable to others. However, the challenging part about coming up with a search algorithm is finding the best way to weight a state in chess. There are so many variables in chess, so it is hard to choose which to focus more on. This is where my learning algorithm comes in. In order to achieve the best way to weight a state (in the form of a heuristic function), I am working on developing a genentic algorithm, which will take deciding on the most important attributes out of my hands. Hopefully, this will create a bot able to rival the best of the class when we go head-to-head, single elimination style.')">Read More</a>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div id="slide-2" class="carousel-item mb-5">
+                        <img class="img-fluid w-75" src="assets/welcome.jpg">
+                        <div class="carousel-caption">
+                            <h5> Welcome! </h5>
+                            <h6> 2/23/22 </h6> 
+                            <p> This is my first blog post. Here, I explain the process of building this website! </p>
+                            <button class="btn carousel-btn" onclick="articlePage('Welcome!','2/23/22','Thanks for checking out my website! A lot of work and learning went into this and I am happy to unveil the final product. For the styling of the website, I used a mix of CSS, bootstrap, and animate. The hardest part was getting used to all the bootstrap commands, but it was nothing they did not have online documentation about! In the future, I would like to go back and make it less simplistic as well as add some cleaner animations. If you have any future recommendations, feel free to use the contact function to let me know!')"> Read More </buttin>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel Controls -->
+                <a class="carousel-control-prev" href="#blog-carousel" role="button" data-bs-slide="prev">
+                    <i class="carousel-control-prev-icon"></i>
+                </a>
+                <a class="carousel-control-next" href="#blog-carousel" role="button" data-bs-slide="next">
+                    <i class="carousel-control-next-icon"></i>
+                </a>
+            </div>
+
+        </div>
+        <!-- End of main page -->
+
+        <!--Article Page-->
+        <div id="article-post" class="hidden animate__animated animate__fast">
+            <div class="container mt-4">
+                <a class="go-back color-linen text-decoration-none" onclick="goBack()">
+                    <h1 class="display-5">
+                        <i class="bi bi-arrow-left"></i> Back to Blog
+                    </h1>
+                </a>
+                <hr>
+            </div>
+            <div class="card w-75 mx-auto bg-blue-purple">
+                <h1 id="title" class="text-center mt-3"></h1>
+                <h6 id="date" class="text-center"></h6>
+                <hr>
+                <p id="text" class="mx-5"></p>
+            </div>
+        </div>
+        <!--End of Chess Bot Page-->
+
+
+
+        <!-- Bootstrap Bundle with Popper -->
+        <script src="scripts/bootstrap.bundle.min.js"></script>
+        <script>
+
+            function articlePage(varTitle, varDate, varText) {
+                var page = document.getElementById('main-page');
+                if (page.classList.contains('animate__backInRight')) {
+                    page.classList.remove('animate__backInRIght');
+                }
+                page.classList.add('animate__backOutLeft');
+
+                page = document.getElementById("article-post");
+                title.innerHTML = varTitle
+                date.innerHTML = varDate
+                text.innerHTML = varText
+                page.style.visibility = "visible";
+                if (page.classList.contains('animate__backOutLeft')) {
+                    page.classList.remove('animate__backOutLeft');
+                }
+                page.classList.add('animate__backInRight');
+            }
+
+            function goBack() {
+                var page = document.getElementById("article-post");
+                page.classList.remove('animate__backInRight');
+                page.classList.add('animate__backOutLeft');
+
+                page = document.getElementById('main-page');
+                page.classList.remove('animate__backOutLeft');
+                page.classList.add('animate__backInRight');
+            }
+        </script>
+    </body>
+
+</html>
