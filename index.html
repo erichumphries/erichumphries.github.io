@@ -22,7 +22,7 @@
         <nav class="navbar navbar-light container-fluid navbar-bg-color">
             <ul class="navbar-right nav">
                 <li class="active">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand my-auto" href="#">
                         <i class="bi bi-house-fill"></i>
                     </a>
                 </li>
@@ -65,9 +65,9 @@
         <!-- Pages Icons -->
         <div class="animate__animated animate__pulse color-linen container h-50 text-center box-margins justify-content-center">
             <div class="card-group gap-4">
-                <div class="card-bg-color card-transition card rounded">
+                <div class="card-bg-color card-transition card rounded" id="mouse-hover-bug">
                     <div class="card-header mt-2">
-                        <h2> <i class="bi bi-bug"></i> </h2>
+                        <h2> <i class="bi bi-bug" id="bug"></i> </h2>
                     </div>
                     <div class="card-body">
                         <h3 class="card-title"> Projects </h3>
@@ -77,9 +77,9 @@
                         <a class="btn btn-color stretched-link" href="projects.html"> See Projects </a>
                     </div>
                 </div>
-                <div class="card-bg-color card-transition card rounded">
+                <div class="card-bg-color card-transition card rounded" id="mouse-hover-stickies">
                     <div class="card-header mt-2">
-                        <h2> <i class="bi bi-journals"></i> </h2>
+                        <h2> <i class="bi bi-stickies" id="stickies"></i> </h2>
                     </div>
                     <div class="card-body">
                         <h3 class="card-title"> Blog </h3>
@@ -89,21 +89,21 @@
                         <a class="btn btn-color stretched-link" href="blog.html"> Read Blog </a>
                     </div>
                 </div>
-                <div class="card-bg-color card-transition card rounded">
+                <div class="card-bg-color card-transition card rounded" id="mouse-hover-person">
                     <div class="card-header mt-2">
-                        <h2> <i class="bi bi-person-square"></i> </h2>
+                        <h2> <i class="bi bi-person" id="person"></i> </h2>
                     </div>
                     <div class="card-body">
                         <h3 class="card-title"> About </h3>
-                        <p class="card-text text-wrap"> A list of my skills as well as a summary about myself and my history coding </p>
+                        <p class="card-text text-wrap"> A list of skills (past and currently learning) as well as a summary about myself and my history coding </p>
                     </div>
                     <div class="card-footer">
                         <a class="btn btn-color stretched-link" href="projects.html"> About Page </a>
                     </div>
                 </div>
-                <div class="card-bg-color card-transition card rounded">
+                <div class="card-bg-color card-transition card rounded" id="mouse-hover-envelope">
                     <div class="card-header mt-2">
-                        <h2> <i class="bi bi-telephone"></i> </h2>
+                        <h2> <i class="bi bi-envelope" id="envelope"></i> </h2>
                     </div>
                     <div class="card-body">
                         <h3 class="card-title"> Contact </h3>
@@ -118,7 +118,58 @@
         </div>
 
         <!-- Bootstrap Bundle with Popper -->
-        <script src="scripts/bootstrap.bundle.min.js">
+        <script src="scripts/bootstrap.bundle.min.js"></script>
+        <script>
+            // I read the mdn on how to add a mouse enter effect (I got the recommendation to look this up from stackoverflow)
+            
+            // projects icon - bug
+            const mouseBug = document.getElementById("mouse-hover-bug");
+            const bug = document.getElementById("bug");
+            mouseBug.addEventListener('mouseenter', e => {
+                bug.classList.remove('bi-bug');
+                bug.classList.add('bi-bug-fill');
+            });
+            mouseBug.addEventListener('mouseleave', e => {
+                bug.classList.remove('bi-bug-fill');
+                bug.classList.add('bi-bug');
+            });
+
+            // blog icon - stickies
+            const mouseStickies = document.getElementById("mouse-hover-stickies");
+            const stickies = document.getElementById("stickies");
+            mouseStickies.addEventListener('mouseenter', e => {
+                stickies.classList.remove('bi-stickies');
+                stickies.classList.add('bi-stickies-fill');
+            });
+            mouseStickies.addEventListener('mouseleave', e => {
+                stickies.classList.remove('bi-stickies-fill');
+                stickies.classList.add('bi-stickies');
+            });
+
+            // about icon - person
+            const mousePerson = document.getElementById("mouse-hover-person");
+            const person = document.getElementById("person");
+            mousePerson.addEventListener('mouseenter', e => {
+                person.classList.remove('bi-person');
+                person.classList.add('bi-person-fill');
+            });
+            mousePerson.addEventListener('mouseleave', e => {
+                person.classList.remove('bi-person-fill');
+                person.classList.add('bi-person');
+            });
+
+            // contact icon - envelope
+            const mouseEnvelope = document.getElementById("mouse-hover-envelope");
+            const envelope = document.getElementById("envelope");
+            mouseEnvelope.addEventListener('mouseenter', e => {
+                envelope.classList.remove('bi-envelope');
+                envelope.classList.add('bi-envelope-fill');
+            });
+            mouseEnvelope.addEventListener('mouseleave', e => {
+                envelope.classList.remove('bi-envelope-fill');
+                envelope.classList.add('bi-envelope');
+            });
+
 
         </script>
     </body>
