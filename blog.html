@@ -137,6 +137,10 @@
         <!-- Bootstrap Bundle with Popper -->
         <script src="scripts/bootstrap.bundle.min.js"></script>
         <script>
+            var queryString = new URLSearchParams(location.search);
+            if (queryString.has("cb")) {
+                articlePage('Chess Bot','2/23/22','For my Introduction to Artificial Intelligence class, we are tasked to create a chess bot. In the class, we learned of various different searching algorithm, but there was a clear winner. Alpha-Beta search is the key. In Alpha-Beta search, we take the advantages of adversarial search but add the elemt of igmoring paths we know are unfavorable to others. However, the challenging part about coming up with a search algorithm is finding the best way to weight a state in chess. There are so many variables in chess, so it is hard to choose which to focus more on. This is where my learning algorithm comes in. In order to achieve the best way to weight a state (in the form of a heuristic function), I am working on developing a genentic algorithm, which will take deciding on the most important attributes out of my hands. Hopefully, this will create a bot able to rival the best of the class when we go head-to-head, single elimination style.');
+            }
 
             function articlePage(varTitle, varDate, varText) {
                 var page = document.getElementById('main-page');
