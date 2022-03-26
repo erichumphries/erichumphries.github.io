@@ -74,25 +74,33 @@
                 <ol class="carousel-indicators">
                     <li data-bs-target="#blog-carousel" data-bs-slide-to="0" class="active"></li>
                     <li data-bs-target="#blog-carousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#blog-carousel" data-bs-slide-to="2"></li>
                 </ol>
                 <!-- Carousel Body -->
                 <div class="carousel-inner text-center">
                     <!-- Slide 1 -->
                     <div id="slide-1" class="carousel-item active mb-5">
-                        <img class="img-fluid w-75" src="assets/chess-blog.jpg">
+                        <img class="img-fluid w-50" src="assets/news-page.png">
                         <div class="carousel-caption">
-                            <h5> Chess Bot </h5>
-                            <h6> 2/23/22 </h6>
-                            <p> My current thoughts and progress on my chess bot </p>
-                            <!--
-                            <button class="btn carousel-btn" onclick="document.location='articles/chess-bot.html'"> Read More </button>
-                            -->
-                            <a class="btn carousel-btn" onclick="articlePage('Chess Bot','2/23/22','For my Introduction to Artificial Intelligence class, we are tasked to create a chess bot. In the class, we learned of various different searching algorithm, but there was a clear winner. Alpha-Beta search is the key. In Alpha-Beta search, we take the advantages of adversarial search but add the elemt of igmoring paths we know are unfavorable to others. However, the challenging part about coming up with a search algorithm is finding the best way to weight a state in chess. There are so many variables in chess, so it is hard to choose which to focus more on. This is where my learning algorithm comes in. In order to achieve the best way to weight a state (in the form of a heuristic function), I am working on developing a genentic algorithm, which will take deciding on the most important attributes out of my hands. Hopefully, this will create a bot able to rival the best of the class when we go head-to-head, single elimination style.')">Read More</a>
+                            <h5 class="text-dark"> News Website Project </h5>
+                            <h6> 3/25/22 </h6>
+                            <p> My newest project where I make my own news posting website! </p>
+                            <a class="btn carousel-btn" onclick="articlePage('News Website Project','3/25/22','&nbsp;&nbsp;&nbsp;&nbsp;The overall goal of the application is to create a platform for people to freely share information. It also acts as a vessel for sharing views of certain articles. The target audience is for the average person to be able to write an article for the world to see. Measures will need to be taken to prevent such freedom from being abused, like forcing people to have an account to comment or post. By making people have accounts, we can give more options to the user for convenience, such as letting them update their articles, delete their articles, look at the view count and view times of their articles, look through their own comment history, and look at their view history. The website will also be separated into different categories as well as recommend articles to the user based on their view history and what’s been trending (viewed and liked the most). <br>&nbsp;&nbsp;&nbsp;&nbsp;For the frontend, the user will see recommended articles on their homepage or a general homepage if they aren’t logged in. They’ll see an option to login at the top, as well as quick navigation to various genres of articles. When the user decides on an article, they will be taken to a new page for the article. When they scroll to the bottom of the article, they’ll be able to add a comment if they are logged in. On the backend, this is where the processing of the webpage ids will be as well as the accounts. The webpage hyperlink will be in the form of a unique id at the end that gets passed to the database to see if it exists. The comment section will be organized similarly to reddit where comments can be upvoted or downvoted as well as being organized in that way. The backend will also be in charge of deciding on the recommendation system for comments and articles. The database will store our account information, the articles, and the comments. ')">Read More</a>
                         </div>
                     </div>
                     <!-- Slide 2 -->
                     <div id="slide-2" class="carousel-item mb-5">
-                        <img class="img-fluid w-75" src="assets/welcome.jpg">
+                        <img class="img-fluid w-50" src="assets/chess-blog.jpg">
+                        <div class="carousel-caption">
+                            <h5> Chess Bot </h5>
+                            <h6> 2/23/22 </h6>
+                            <p> My current thoughts and progress on my chess bot </p>
+                            <a class="btn carousel-btn" onclick="articlePage('Chess Bot','2/23/22','For my Introduction to Artificial Intelligence class, we are tasked to create a chess bot. In the class, we learned of various different searching algorithm, but there was a clear winner. Alpha-Beta search is the key. In Alpha-Beta search, we take the advantages of adversarial search but add the elemt of igmoring paths we know are unfavorable to others. However, the challenging part about coming up with a search algorithm is finding the best way to weight a state in chess. There are so many variables in chess, so it is hard to choose which to focus more on. This is where my learning algorithm comes in. In order to achieve the best way to weight a state (in the form of a heuristic function), I am working on developing a genentic algorithm, which will take deciding on the most important attributes out of my hands. Hopefully, this will create a bot able to rival the best of the class when we go head-to-head, single elimination style.')">Read More</a>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div id="slide-3" class="carousel-item mb-5">
+                        <img class="img-fluid w-50" src="assets/welcome.jpg">
                         <div class="carousel-caption">
                             <h5> Welcome! </h5>
                             <h6> 2/23/22 </h6> 
